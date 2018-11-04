@@ -6,6 +6,19 @@ public class Pessoa {
 	private String cpf;
 	private String telefone;
 	private String email;
+	public String nomepublico;
+	/**
+	 * @return the nomepublico
+	 */
+	public String getNomepublico() {
+		return nomepublico;
+	}
+	/**
+	 * @param nomepublico the nomepublico to set
+	 */
+	public void setNomepublico(String nomepublico) {
+		this.nomepublico = nomepublico;
+	}
 	/**
 	 * @return the nome
 	 */
