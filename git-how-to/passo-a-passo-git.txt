@@ -1,0 +1,66 @@
+#
+#	Utilizando o bash com GIT
+#
+
+1- Criar diretório onde ficara o repositório novo:
+mkdir <nome-do-diretorio>
+	Exemplo: mkdir seurepositorio
+	
+2 - Entrar no diretório onde ficara o repositório:
+cd <nome-do-diretorio>
+	Exemplo: cd seurepositorio
+
+3 - Iniciar o repositório do git local:
+git init
+	Exemplo: git init
+
+4 - Trabalhar no repositório:
+...
+touch  readme.md
+notepad  readme.md
+nano  readme.md
+...
+
+5 - Acrescentar os arquivos e diretórios ao repositório do git local:
+git add -f *
+	Exemplo: git add -f *
+
+
+6 - Fazer o commit dos arquivos e diretórios ao repositório do git local:
+git commit -a -m "<seu-comentario>"
+	Exemplo: git commit -a -m "Meu projeto 01"
+
+7 - Fazer a ligação do repositório do git local com o GITHUB:
+git remote add <nome-do-atalho> https://github.com/<seu-login-no-git>/<seu-repositorio-no-git>.git
+	Exemplo:
+		git remote add localrepositorio https://github.com/carlos-teles/seurepositorio.git
+		
+8 - Verifcar o atalho para criação do repositório:
+git remote -v
+	Exemplo:
+		git remote -v
+		Saída:
+		localrepositorio     https://github.com/carlos-teles/seurepositorio.git (fetch)
+		localrepositorio     https://github.com/carlos-teles/seurepositorio.git (push)
+
+
+9 - Configurar o git local para fazer login no Github:
+git config --global user.name "<seu nome aqui>"
+git config --global user.email "<seu email aqui>"
+git config --global http.sslVerify false
+Exemplo:
+	git config --global user.name "Carlos A M S Teles"
+	git config --global user.email "carlos.teles@eic.cefet-rj.br"
+	git config --global http.sslVerify false
+
+10 - Enviar os dados do repositório local para o Github:
+git push <nome-do-atalho> master
+Exemplo:
+	git push localrepositorio master
+
+11 - Buscar os dados do Github para o repositório local :
+git pull <nome-do-atalho> master
+Exemplo:
+	git pull localrepositorio master
+
+
