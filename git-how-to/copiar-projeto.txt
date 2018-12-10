@@ -1,0 +1,19 @@
+#
+# 1 -Entrar no diretório do projeto
+# Em nosso caso: eclipse-workspace/projeto-java/projeto-java/
+#
+ 
+cd <diretorio-do-projeto>
+Exemplo: cd eclipse-workspace/projeto-java/projeto-java/
+
+#
+# 2 - Fazer uma cópia do diretório recursivamente
+#
+#
+cp -r <diretorio-do-projeto-origem> <diretorio-do-projeto-destino>
+Exemplo: cp -r infonote_01 infonote_02
+
+#
+# 3 - Criar o projeto no Eclipse a partir do infonote_02
+#
+
