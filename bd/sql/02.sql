@@ -1,9 +1,5 @@
 use infonote;
 
---Comentario
-/*
-drop table if exists usuario;
-*/
 
 CREATE TABLE usuario (
 id_usuario int(11) not null AUTO_INCREMENT,
